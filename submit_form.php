@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
     // En-têtes additionnels
-    $headers .= 'From: <webmaster@example.com>' . "\r\n";
+    $headers .= 'From: <webmaster@gyro.fr>' . "\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
         echo "E-mail envoyé avec succès.";
